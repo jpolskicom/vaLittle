@@ -39,9 +39,8 @@ Lightweight validation plugin in pure js
 ## Return example
 ```
 field_name:{
- email: false, // is error?
- errors: true, // is error?
- requireGroup: true, // is error?
+ email: false, // is error in that rule?
+ requireGroup: true, // is error in that rule?
  message: "Podaj e-mail lub telefon", // error message
  errors: true // if error 
 },
