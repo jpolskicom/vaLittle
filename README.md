@@ -27,7 +27,7 @@ Lightweight validation plugin in pure js
     }
     
 // Example form data - field_name:'value'
-    const = ContactFormData{
+    const ContactFormData = {
       name:'test123'
     };
     
