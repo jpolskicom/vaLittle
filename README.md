@@ -89,7 +89,7 @@ Requires value
   require:true
 ```
 ### Require from group
-Requires value from one or more input in group
+Requires value from one or more inputs in group
 ```
   requireGroup:'group_name'
 ```
