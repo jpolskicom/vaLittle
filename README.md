@@ -36,6 +36,17 @@ Lightweight validation plugin in pure js
     
   })();
 ```
+## Return example
+```
+field_name:{
+ email: false, // is error?
+ errors: true, // is error?
+ requireGroup: true, // is error?
+ message: "Podaj e-mail lub telefon", // error message
+ errors: true // if error 
+},
+errors:true // has any field error?
+```
 ## Rules
 
 ### Custom Regex
