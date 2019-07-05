@@ -62,11 +62,8 @@ export function vaLittle(){
         this.results[r].requireGroup =  g === true || g === undefined ? true : false;
       }
       let e = Object.values(this.results[r]).indexOf(true);
-      
-      this.results[r].errors = !e;
-
+      this.results[r].errors = e == -1 ? false : true;
       this.results[r].message = e == -1 ? false : this.messages[r][Object.keys(this.rules[r])[e]];
-
     }
     let e = Object.keys(this.results).map(e => { return this.results[e].errors; }).indexOf(true);
     this.results.errors = e !== -1 ? true : false;
