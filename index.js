@@ -71,10 +71,10 @@ export function vaLittle(){
         let g = this.requireGroupState[this.rules[r].requireGroup];
         this.results[r].requireGroup =  g === true || g === undefined ? true : false;
       }
-      if (Object.keys(this.results[r]).indexOf('equalGroup')) {
+      if (Object.keys(this.results[r]).indexOf('equalGroup') > -1 && !this.equalGroupState[this.rules[r].equalGroup]) {
         let g = this.equalGroupState[this.rules[r].equalGroup];
         this.results[r].equalGroup =  g === undefined ? true : false;
-      }
+      } 
       let e = Object.values(this.results[r]).indexOf(true);
       this.results[r].errors = e == -1 ? false : true;
       this.results[r].message = e == -1 ? false : this.messages[r][Object.keys(this.rules[r])[e]];
